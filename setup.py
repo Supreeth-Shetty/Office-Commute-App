@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 ## edit below variables as per your requirements -
-REPO_NAME = "office_commute_app"
-AUTHOR_USER_NAME = "Akhileshlekurwale"
+REPO_NAME = "Office-Commute-App"
+AUTHOR_USER_NAME = "Supreeth-Shetty"
 SRC_REPO = "src"
 LIST_OF_REQUIREMENTS = []
 
