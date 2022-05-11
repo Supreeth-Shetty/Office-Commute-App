@@ -1,11 +1,18 @@
+from distutils.command.config import config
+import os
 import pymongo
 import datetime
+from src.utils.common import read_yaml
+
+config_path = os.path.join('configs', 'config.yaml')
+config = read_yaml(config_path)
+print(config)
 
 class MongoOperations:
 
     def __init__(self):
         try:
-            path = "mongodb+srv://test:test@cluster0.8kinx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+            path = config['secrets']['mongo_url']
             self.client = pymongo.MongoClient(path)
             self.db = self.client['GetToWork']
             self.collection = self.db['logs']
@@ -127,10 +134,10 @@ class Applogs(MongoOperations):
         return "Applogs Class"
 
 
-log = Applogs('logger\logs\projectlogs.log', 'DEBUG')
-log.getlogger(__file__)
+# log = Applogs('logger\logs\projectlogs.log', 'DEBUG')
+# log.getlogger(__file__)
 
-log.debug("debug logged")
-log.info("info logged")
-log.warning("warning logged")
-log.critical("critical logged")
+# log.debug("debug logged")
+# log.info("info logged")
+# log.warning("warning logged")
+# log.critical("critical logged")
