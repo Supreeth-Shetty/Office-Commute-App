@@ -1,12 +1,11 @@
-from distutils.command.config import config
 import os
 import pymongo
 import datetime
 from src.utils.common import read_yaml
+from distutils.command.config import config
 
 config_path = os.path.join('configs', 'config.yaml')
 config = read_yaml(config_path)
-print(config)
 
 class MongoOperations:
 
@@ -16,13 +15,12 @@ class MongoOperations:
             self.client = pymongo.MongoClient(path)
             self.db = self.client['GetToWork']
             self.collection = self.db['logs']
-            print("Mongodb Connection Established")
+            # print("Mongodb Connection Established")
         except Exception as e:
             print(e.__str__)
 
         
     def insert_logs(self, log_msg):
-        print("insertlogs")
         try:
             message_dict = self.log_msg_to_dict(log_msg)
             rec = self.collection.insert_one(message_dict)
