@@ -1,0 +1,12 @@
+__pycache__/
+env/
+logger/logs/
+src.egg-info/
+Commute_Flowchart.drawio.png
+Office Commute Database ER Diagram - Database ER diagram (crow's foot) (5).png
+
+# Django stuff
+db.sqlite3
+
+# Editor files
+.vscode/
