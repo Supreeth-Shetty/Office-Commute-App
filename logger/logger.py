@@ -110,7 +110,7 @@ class Applogs(MongoOperations):
 
     def getlogger(self, sourcefilename):
         try:
-            self.sourcefile = sourcefilename
+            self.sourcefile = sourcefilename.replace(os.getcwd(), "")
         except Exception as e:
             print(e)
 

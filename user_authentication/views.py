@@ -1,9 +1,10 @@
+import os
 import re
 from django.shortcuts import render
 from django.http import HttpResponse
 from logger.logger import Applogs
 
-log = Applogs(setlevel="DEBUG")
+log = Applogs()
 log.getlogger(__file__)
 
 def homePageView(request):
