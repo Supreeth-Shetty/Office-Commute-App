@@ -22,8 +22,5 @@ git checkout branch name
 #### once its branch is created push to new branch using command
 git push origin branch name
 
-#### once its pushed take a pull
-git pull origin branch name
-
 
 
