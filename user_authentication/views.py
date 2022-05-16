@@ -27,13 +27,13 @@ def register_employee(request):
         email = request.POST['Email Id']
         password = request.POST['password']
         password_con = request.POST['confirm password']
-        company_id = int(request.POST['company_id'])
+        comp_id = int(request.POST['company_id'])
         branch_id = int(request.POST['branch_id'])
         todays_date = date.today().strftime("%d/%m/%Y")
-        print(user_name, phone, email, password, password_con, type(company_id))
+        print(user_name, phone, email, password, password_con, type(comp_id))
         users = User(
             user_id=id, user_name=user_name, user_phone_number=phone, 
-            user_email_id=email, user_password=password, company_id=1, 
+            user_email_id=email, user_password=password, company_id=comp_id, 
             branch_id=1, user_type_id=1, created_date=todays_date, updated_date=todays_date, 
             user_status='pending')
         users.save()
