@@ -1,1 +1,25 @@
-2022-05-14 14:54:15.295367::\user_authentication\views.py::DEBUG::debug logged
+2022-05-15 16:46:19.392826::\user_authentication\views.py::DEBUG::landed on index page
+2022-05-15 16:46:20.839316::\user_authentication\views.py::DEBUG::routed to login page
+2022-05-15 16:46:23.434265::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 16:46:24.510093::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-15 16:47:53.050652::\user_authentication\views.py::DEBUG::landed on index page
+2022-05-15 16:47:55.478279::\user_authentication\views.py::DEBUG::routed to login page
+2022-05-15 16:47:57.801169::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 16:47:58.603301::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-15 16:53:36.146168::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 16:54:30.940874::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 16:54:32.402183::\user_authentication\views.py::DEBUG::routed to register_driver page
+2022-05-15 16:54:34.642665::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-15 16:58:07.126172::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-15 16:58:09.059942::\user_authentication\views.py::DEBUG::routed to register_driver page
+2022-05-15 22:59:12.939454::\user_authentication\views.py::DEBUG::landed on index page
+2022-05-15 22:59:19.246089::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 22:59:22.031178::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-15 22:59:24.514425::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-15 22:59:25.849196::\user_authentication\views.py::DEBUG::routed to register_driver page
+2022-05-15 23:02:13.923239::\user_authentication\views.py::DEBUG::routed to login page
+2022-05-16 10:29:27.358922::\user_authentication\views.py::DEBUG::landed on index page
+2022-05-16 10:29:35.203006::\user_authentication\views.py::DEBUG::routed to login page
+2022-05-16 10:29:38.806565::\user_authentication\views.py::DEBUG::routed to signup page
+2022-05-16 10:29:40.661640::\user_authentication\views.py::DEBUG::routed to register_employee page
+2022-05-16 10:29:43.827992::\user_authentication\views.py::DEBUG::routed to register_driver page
