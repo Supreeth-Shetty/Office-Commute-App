@@ -55,3 +55,4 @@ class Location(models.Model):
 # python manage.py sqlmigrate user_authentication 0001 (creating reqired table creation qureies)
 
 # python manage.py migrate (to launch those quries created)
+
