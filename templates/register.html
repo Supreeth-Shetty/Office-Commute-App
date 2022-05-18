@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <a href="register/employee">Sign Up as an Employee</a><br><br>
+    <a href="register/driver">Sign Up as an Driver</a><br>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+    <div class="testbox">
+      <h1>Registration</h1>
+
+      <form action="/">
+          <hr>
+        <div class="accounttype">
+          <input type="radio" value="None" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio" chec>Employee</label>
+          <input type="radio" value="None" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Driver</label>
+        </div>
+      <hr>
+      <label id="icon" for="name"><i class="icon-envelope "></i></label>
+      <input type="text" name="name" id="name" placeholder="Email" required/>
+      <label id="icon" for="name"><i class="icon-user"></i></label>
+      <input type="text" name="name" id="name" placeholder="Name" required/>
+      <label id="icon" for="name"><i class="icon-shield"></i></label>
+      <input type="password" name="name" id="name" placeholder="Password" required/>
+      <div class="gender">
+        <input type="radio" value="None" id="male" name="gender" checked/>
+        <label for="male" class="radio" chec>Male</label>
+        <input type="radio" value="None" id="female" name="gender" />
+        <label for="female" class="radio">Female</label>
+      </div> 
+      <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+      <a href="#" class="button">Register</a>
+      </form>
+    </div>
+	<!-- <form action="register" method="post">
+        {% csrf_token %}
+        <input type="text" name="User Name" placeholder="User Name"><br>
+        <input type="text" name="Phone" placeholder="Phone Number"><br>
+        <input type="text" name="Email Id" placeholder="Email Id"><br>
+        <input type="text" name="password" placeholder="Password"><br>
+        <input type="text" name="confirm password" placeholder="Confirm Password"><br>
+    </form> -->
+  </body>
+</html>
+

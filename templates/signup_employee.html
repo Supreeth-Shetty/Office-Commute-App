@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+	<form action="employee" method="post">
+        {% csrf_token %}
+        <input type="text" name="User Name" placeholder="Employee User Name"><br>
+        <input type="text" name="Phone" placeholder="Phone Number"><br>
+        <input type="text" name="Email Id" placeholder="Email Id"><br>
+        <input type="text" name="password" placeholder="Password"><br>
+        <input type="text" name="confirm password" placeholder="Confirm Password"><br>
+        <input type="text" name="company_id" placeholder="company_id"><br>
+        <input type="text" name="branch_id" placeholder="branch_id"><br>
+        <input type="submit">
+    </form>
+  </body>
+</html>
