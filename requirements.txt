@@ -6,3 +6,5 @@ PyYAML
 gunicorn
 psycopg2
 django-phone-field
+notebook
+
